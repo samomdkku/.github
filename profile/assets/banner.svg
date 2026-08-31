@@ -29,16 +29,23 @@
 
     <!-- ECG trace: p-wave, QRS, t-wave. This faculty's student union runs a
          service called VitalSound, and the logo is a Rod of Asclepius — a
-         rhythm strip is the one motif that belongs to both. -->
-    <path d="M0 262 H250 q12 0 17 -11 q7 -16 14 0 q5 11 17 11 H430
-             l18 0 l11 -36 l17 112 l19 -148 l15 70 l11 2 H720
-             q14 0 21 -18 q9 -24 18 0 q7 18 21 18 H1200"
-          fill="none" stroke="url(#traceFade)" stroke-width="3"
+         rhythm strip is the one motif that belongs to both.
+
+         ⚠️ THE AMPLITUDE IS DELIBERATELY SMALL. The first version drew a
+         112px R-wave on a 340px canvas and it speared the tagline; rendered
+         and looked at, which is the only way that was ever going to surface.
+         The complex now spans y=264..314 — clear of the text above (bottom
+         y=232) and of the accent rule below (y=336). Check a render, not the
+         path, before changing these numbers. -->
+    <path d="M0 292 H300 q10 0 14 -8 q6 -12 12 0 q4 8 14 8 H470
+             l14 0 l10 -12 l14 34 l16 -50 l12 24 l10 4 H760
+             q12 0 17 -12 q8 -18 16 0 q6 12 17 12 H1200"
+          fill="none" stroke="url(#traceFade)" stroke-width="2.5"
           stroke-linecap="round" stroke-linejoin="round"/>
 
     <!-- The QRS complex alone, in the accent. The eye lands on the beat. -->
-    <path d="M448 262 l11 -36 l17 112 l19 -148 l15 70 l11 2"
-          fill="none" stroke="#FF6F30" stroke-width="4"
+    <path d="M484 292 l10 -12 l14 34 l16 -50 l12 24 l10 4"
+          fill="none" stroke="#FF6F30" stroke-width="3.2"
           stroke-linecap="round" stroke-linejoin="round"/>
 
     <g font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
