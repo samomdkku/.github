@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/banner.svg" alt="MDKKU SAMO — Student Union, Faculty of Medicine, Khon Kaen University" width="100%">
+<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/banner.svg?v=2" alt="MDKKU SAMO — Student Union, Faculty of Medicine, Khon Kaen University" width="100%">
 
 ### สโมสรนักศึกษา คณะแพทยศาสตร์ มหาวิทยาลัยขอนแก่น
 
@@ -29,7 +29,7 @@ ssh by a person on the university network.
 
 ## How a change reaches a student
 
-<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/pipeline.svg" alt="A change goes: pull request, review by CODEOWNERS and CI, main, then a person deploys from the university network to samo.md.kku.ac.th. A review that asks for changes returns to the author." width="100%">
+<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/pipeline.svg?v=2" alt="A change goes: pull request, review by CODEOWNERS and CI, main, then a person deploys from the university network to samo.md.kku.ac.th. A review that asks for changes returns to the author." width="100%">
 
 **Pushing `main` does not deploy.** A person runs the deploy, on the university
 network, and then checks the served page rather than an exit code. That is
@@ -38,7 +38,7 @@ is one somebody can read in an afternoon.
 
 ## Ten ฝ่าย, ten identities
 
-<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/departments.svg" alt="The colour identity of each ฝ่าย" width="100%">
+<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/departments.svg?v=2" alt="The colour identity of each ฝ่าย" width="100%">
 
 <div align="center"><sub>
 บริหารองค์กร · ดิจิทัลและสื่อสารองค์กร · กิจการภายใน · กิจการภายนอก · กิจการมหาวิทยาลัย ·
