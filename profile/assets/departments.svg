@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 44" width="1200" height="44" role="img" aria-label="The ten ฝ่าย, each with its own colour identity">
+  <title>Ten ฝ่าย, ten colour identities</title>
+  <defs><clipPath id="r"><rect width="1200" height="44" rx="6"/></clipPath></defs>
+  <g clip-path="url(#r)">
+    <!-- Read straight out of src/css/base.css so the ribbon and the app cannot
+         disagree about what colour a ฝ่าย is. -->
+    <rect x="0"    width="120" height="44" fill="#A17A60"/>
+    <rect x="120"  width="120" height="44" fill="#F2CB67"/>
+    <rect x="240"  width="120" height="44" fill="#E68FAA"/>
+    <rect x="360"  width="120" height="44" fill="#7DB0CD"/>
+    <rect x="480"  width="120" height="44" fill="#F49D5F"/>
+    <rect x="600"  width="120" height="44" fill="#2F5F9C"/>
+    <rect x="720"  width="120" height="44" fill="#318D65"/>
+    <rect x="840"  width="120" height="44" fill="#8DC96C"/>
+    <rect x="960"  width="120" height="44" fill="#2294BC"/>
+    <rect x="1080" width="120" height="44" fill="#8C6A47"/>
+  </g>
+</svg>

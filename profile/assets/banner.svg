@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="MDKKU SAMO — Student Union, Faculty of Medicine, Khon Kaen University">
+  <title>MDKKU SAMO</title>
+
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B4A31"/>
+      <stop offset="0.55" stop-color="#143C27"/>
+      <stop offset="1" stop-color="#0E2E1D"/>
+    </linearGradient>
+
+    <!-- The trace fades in from the left and out to the right so it reads as a
+         continuous signal passing through, not a shape that starts and stops. -->
+    <linearGradient id="traceFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00" stop-color="#F2F0E9" stop-opacity="0"/>
+      <stop offset="0.14" stop-color="#F2F0E9" stop-opacity="0.30"/>
+      <stop offset="0.86" stop-color="#F2F0E9" stop-opacity="0.30"/>
+      <stop offset="1.00" stop-color="#F2F0E9" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="frame"><rect width="1200" height="340" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#field)"/>
+
+    <!-- The broken arc from the logo, oversized and cropped by the frame. -->
+    <circle cx="600" cy="352" r="286" fill="none" stroke="#F2F0E9" stroke-opacity="0.10" stroke-width="3"/>
+    <circle cx="600" cy="352" r="330" fill="none" stroke="#F2F0E9" stroke-opacity="0.05" stroke-width="2"/>
+
+    <!-- ECG trace: p-wave, QRS, t-wave. This faculty's student union runs a
+         service called VitalSound, and the logo is a Rod of Asclepius — a
+         rhythm strip is the one motif that belongs to both. -->
+    <path d="M0 262 H250 q12 0 17 -11 q7 -16 14 0 q5 11 17 11 H430
+             l18 0 l11 -36 l17 112 l19 -148 l15 70 l11 2 H720
+             q14 0 21 -18 q9 -24 18 0 q7 18 21 18 H1200"
+          fill="none" stroke="url(#traceFade)" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- The QRS complex alone, in the accent. The eye lands on the beat. -->
+    <path d="M448 262 l11 -36 l17 112 l19 -148 l15 70 l11 2"
+          fill="none" stroke="#FF6F30" stroke-width="4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
+      <text x="600" y="168" font-size="92" font-weight="700" letter-spacing="10">
+        <tspan fill="#F2F0E9">MDKKU</tspan><tspan fill="#FF6F30"> SAMO</tspan>
+      </text>
+      <text x="600" y="206" font-size="15" font-weight="500" letter-spacing="6.5"
+            fill="#F2F0E9" fill-opacity="0.62">STUDENT UNION</text>
+      <text x="600" y="232" font-size="12.5" font-weight="400" letter-spacing="2.6"
+            fill="#F2F0E9" fill-opacity="0.40">FACULTY OF MEDICINE &#183; KHON KAEN UNIVERSITY</text>
+    </g>
+
+    <rect y="336" width="1200" height="4" fill="#FF6F30" fill-opacity="0.85"/>
+  </g>
+</svg>
