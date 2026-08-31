@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 206" width="1200" height="206" role="img" aria-label="A change goes: pull request, review, main, a person deploys from the university network, then the live site. Rejected reviews return to the contributor.">
+  <title>How a change reaches a student</title>
+
+  <!--
+    This replaced a ```mermaid block. GitHub rendered that block EMPTY — no
+    error, no diagram, just a gap where the pipeline should be, which is the
+    same silent-failure shape this project keeps writing up. An SVG committed
+    to the repository renders identically for everyone, needs no client-side
+    JavaScript, and carries the brand.
+
+    Labels are English on purpose: an SVG uses the VIEWER's fonts, and Thai
+    glyphs are not guaranteed on every system. Thai lives in the markdown
+    around it, where GitHub's own font stack handles it.
+  -->
+
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B4A31"/>
+      <stop offset="1" stop-color="#10321F"/>
+    </linearGradient>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#F2F0E9" fill-opacity="0.55"/>
+    </marker>
+    <marker id="tipBack" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#FF6F30" fill-opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="206" rx="10" fill="url(#card)"/>
+
+  <g font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
+
+    <!-- Five stages, evenly spaced. The fourth is the human one. -->
+    <g>
+      <rect x="24"  y="66" width="186" height="62" rx="8" fill="#F2F0E9" fill-opacity="0.07"
+            stroke="#F2F0E9" stroke-opacity="0.18"/>
+      <text x="117" y="93"  font-size="14" font-weight="600" fill="#F2F0E9">pull request</text>
+      <text x="117" y="112" font-size="11.5" fill="#F2F0E9" fill-opacity="0.55">anyone, from a fork</text>
+    </g>
+
+    <g>
+      <rect x="256" y="66" width="186" height="62" rx="8" fill="#F2F0E9" fill-opacity="0.07"
+            stroke="#F2F0E9" stroke-opacity="0.18"/>
+      <text x="349" y="93"  font-size="14" font-weight="600" fill="#F2F0E9">review</text>
+      <text x="349" y="112" font-size="11.5" fill="#F2F0E9" fill-opacity="0.55">CODEOWNERS + CI</text>
+    </g>
+
+    <g>
+      <rect x="488" y="66" width="186" height="62" rx="8" fill="#F2F0E9" fill-opacity="0.07"
+            stroke="#F2F0E9" stroke-opacity="0.18"/>
+      <text x="581" y="93"  font-size="14" font-weight="600" fill="#F2F0E9">main</text>
+      <text x="581" y="112" font-size="11.5" fill="#F2F0E9" fill-opacity="0.55">merged, not deployed</text>
+    </g>
+
+    <!-- The step that is a PERSON. Accent-outlined because it is the one that
+         surprises people: merging does not ship anything. -->
+    <g>
+      <rect x="720" y="66" width="186" height="62" rx="8" fill="#FF6F30" fill-opacity="0.12"
+            stroke="#FF6F30" stroke-opacity="0.75"/>
+      <text x="813" y="93"  font-size="14" font-weight="600" fill="#FF6F30">a person deploys</text>
+      <text x="813" y="112" font-size="11.5" fill="#F2F0E9" fill-opacity="0.62">on the KKU network</text>
+    </g>
+
+    <g>
+      <rect x="952" y="66" width="224" height="62" rx="8" fill="#F2F0E9" fill-opacity="0.07"
+            stroke="#F2F0E9" stroke-opacity="0.18"/>
+      <text x="1064" y="93"  font-size="14" font-weight="600" fill="#F2F0E9">samo.md.kku.ac.th</text>
+      <text x="1064" y="112" font-size="11.5" fill="#F2F0E9" fill-opacity="0.55">students</text>
+    </g>
+
+    <!-- Forward arrows -->
+    <g stroke="#F2F0E9" stroke-opacity="0.45" stroke-width="1.6" marker-end="url(#tip)">
+      <line x1="214" y1="97" x2="248" y2="97"/>
+      <line x1="446" y1="97" x2="480" y2="97"/>
+      <line x1="678" y1="97" x2="712" y2="97"/>
+      <line x1="910" y1="97" x2="944" y2="97"/>
+    </g>
+
+    <!-- The return path: a review that asks for changes goes back to the author -->
+    <path d="M349 134 V164 H117 V134" fill="none" stroke="#FF6F30" stroke-opacity="0.55"
+          stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#tipBack)"/>
+    <text x="233" y="180" font-size="11" fill="#FF6F30" fill-opacity="0.75">changes requested</text>
+
+    <text x="600" y="34" font-size="12" letter-spacing="3.4"
+          fill="#F2F0E9" fill-opacity="0.42">HOW A CHANGE REACHES A STUDENT</text>
+  </g>
+</svg>

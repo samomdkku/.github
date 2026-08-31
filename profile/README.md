@@ -29,15 +29,7 @@ ssh by a person on the university network.
 
 ## How a change reaches a student
 
-```mermaid
-flowchart LR
-  A["ฝ่าย member<br/>opens a pull request"] --> B{"Review<br/>CODEOWNERS · CI"}
-  B -->|approved| C["main"]
-  C --> D["deploy.sh<br/>on the KKU VM"]
-  D --> E["samo.md.kku.ac.th"]
-  E --> F["students"]
-  B -.->|changes requested| A
-```
+<img src="https://raw.githubusercontent.com/samomdkku/.github/main/profile/assets/pipeline.svg" alt="A change goes: pull request, review by CODEOWNERS and CI, main, then a person deploys from the university network to samo.md.kku.ac.th. A review that asks for changes returns to the author." width="100%">
 
 **Pushing `main` does not deploy.** A person runs the deploy, on the university
 network, and then checks the served page rather than an exit code. That is
